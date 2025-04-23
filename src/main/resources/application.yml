@@ -1,0 +1,13 @@
+server.port: 8080 # Порт, на котором будет работать сервер
+spring:
+  application.name: product-selector-backend # Имя приложения
+  datasource:
+    url: jdbc:postgresql://176.57.212.136:5432/foodmatch # URL для подключения к базе данных PostgresSQL
+    username: postgres # Имя пользователя для подключения к базе данных
+    password: s5ZYQw9Z-N+1,9 # Пароль для подключения к базе данных
+    driver-class-name: org.postgresql.Driver # Класс драйвера для PostgresSQL
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect # Платформа базы данных для JPA (Hibernate)
+    hibernate.ddl-auto: update # update: обновляет схему без удаления данных
+    show-sql: true # Включает логирование SQL-запросов в консоль
+    properties.hibernate.format_sql: true # Форматирует SQL-запросы в логах для лучшей читаемости
